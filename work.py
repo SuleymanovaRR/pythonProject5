@@ -7,7 +7,7 @@ def get_identification(token, my_login):
     res = s.get('https://edge.qiwi.com/identification/v1/persons/' + my_login + '/identification')
     return res.json()
 
-#req = requests.get('https://qiwi.com/main/')
+# не стоит сохранять персональные данные в коде (читай из файла, переменных окружения, вводи явно в программу)
 token = 'xxx'
 login = 'test'
 jsObject = get_identification(token, login)
